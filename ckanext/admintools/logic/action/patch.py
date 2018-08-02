@@ -49,6 +49,6 @@ def make_datasets_public(context, data_dict):
     ids = (package[0] for package in packages)
 
     for _id in ids:
-        get_action('package_patch')(context, {'id': _id, 'private': True})
+        get_action('package_patch')(context, {'id': _id, 'private': False})
 
     return True
